@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Historical Sites</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="The official website for The Little Taco Shop">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Javascript/main.js" defer></script>
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Explore Historical Sites</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="contact.html">Contact Us</a>
-      <i class="fas fa-landmark"></i>
-    </nav>
-  </header>
-  
-<!-- About Section -->
-  <section id="about">
-    <h2>Explore the Past</h2>
-    <p>Discover some of the most iconic historical sites around the world and their stories. Learn about their significance, architecture, and cultural impact.</p>
-  </section>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Historical Images</h2>
-    
-    <!-- First Image + Description -->
-    <div class="gallery-item">
-      <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2024/03/A12253-The-Real-Marvel-Great-Pyramid-of-Giza-770x515.jpg.webp" alt="Pyramids of Giza">
-      <div class="description">
-        <h3>Pyramids of Giza</h3>
-        <p>The Pyramids of Giza are ancient marvels, built over 4,500 years ago as tombs for the pharaohs. These massive structures symbolize the architectural and engineering prowess of ancient Egypt.</p>
-      </div>
-    </div>
+    <section class="hero">
+        <h2 class="hero__h2">Bienvenidos!</h2>
+        <figure>
+            <img src="img/tacos_and_drink_1000x667.png" alt="Tacos and a Drink" title="We love tacos!" width="1000"
+                height="667">
+            <figcaption class="offscreen">
+                Tacos and a Drink
+            </figcaption>
+        </figure>
+    </section>
 
-    <!-- Second Image + Description -->
-    <div class="gallery-item reverse">
-      <img src="https://www.architecturecourses.org/sites/default/files/styles/image_1280x720/public/2024-06/interior-colosseum-rome.webp?itok=Xt5SZ2mZ" alt="The Colosseum">
-      <div class="description">
-        <h3>The Colosseum</h3>
-        <p>Located in the heart of Rome, the Colosseum is an iconic amphitheater known for gladiator battles and public spectacles. It stands as a testament to Roman engineering and culture.</p>
-      </div>
-    </div>
+    <main class="main">
 
-    <!-- Third Image + Description -->
-    <div class="gallery-item">
-      <img src="https://www.architecturecourses.org/sites/default/files/styles/image_1280x720/public/2024-05/great-wall-china-comprehensive-overview.webp?itok=f1aaoSXa" alt="The Great Wall of China">
-      <div class="description">
-        <h3>The Great Wall of China</h3>
-        <p>The Great Wall is a series of fortifications built across China to protect against invasions. It stretches over 13,000 miles and remains a symbol of perseverance and strength.</p>
-      </div>
-    </div>
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th class="menu__header" scope="col">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="menu__item menu__cr" scope="row" rowspan="3">
+                            Crunchy
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__item menu__sf" scope="row" rowspan="3">
+                            Soft
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="menu__item menu__cs" colspan="3">
+                            Chips &amp; Salsa $2
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
 
-    <!-- Fourth Image + Description -->
-    <div class="gallery-item reverse">
-      <img src="https://www.tourinperu.com/wp-content/uploads/2024/01/Diseno-sin-titulo-2-1.webp" alt="Machu Picchu">
-      <div class="description">
-        <h3>Machu Picchu</h3>
-        <p>Nestled in the Andes Mountains, Machu Picchu is an ancient Incan city known for its breathtaking views and intricate stonework. It’s one of the most popular tourist destinations in the world.</p>
-      </div>
-    </div>
-
-    <!-- Fifth Image + Description -->
-    <div class="gallery-item">
-      <img src="https://whc.unesco.org/uploads/thumbs/site_0252_0008-750-750-20250108121530.jpg" alt="Taj Mahal">
-      <div class="description">
-        <h3>Taj Mahal</h3>
-        <p>Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, the Taj Mahal is a stunning example of Mughal architecture. It is widely regarded as a symbol of love and beauty.</p>
-      </div>
-    </div>
-
-    <!-- Sixth Image + Description -->
-    <div class="gallery-item reverse">
-      <img src="https://i.guim.co.uk/img/media/da7e76fc9b8666c39ceeeca0f5dcbc0fd0aed708/0_45_5616_3370/master/5616.jpg?width=620&dpr=2&s=none&crop=none" alt="Stonehenge">
-      <div class="description">
-        <h3>Stonehenge</h3>
-        <p>Stonehenge is a prehistoric monument in England, consisting of a ring of massive standing stones. Its purpose remains a mystery, adding to its allure and historical significance.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Historical Sites. All rights reserved.</p>
-    <p><a href="about.html">Contact Us</a> | Follow us: 
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-    </p>
-  </footer>
+            <p class="center">
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+    </main>
+    <hr>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Little Taco Shop</span>
+        </p>
+    </footer>
 </body>
+
 </html>
